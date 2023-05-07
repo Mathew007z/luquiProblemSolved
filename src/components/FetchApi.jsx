@@ -14,13 +14,7 @@ const FetchApi = () => {
 
   return(
     <div>
-       {
-        data.map((item,index) =>(
-            <div key={index}>
-                {item.title}
-            </div>
-        ))
-       }
+      <ItemList data={data}/>
     </div>
   )
 };
